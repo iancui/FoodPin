@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A06AAE4F1A9DF99C001291F7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AAE4E1A9DF99C001291F7 /* Restaurant.swift */; };
+		A06AAE511A9E034D001291F7 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AAE501A9E034D001291F7 /* DetailTableViewCell.swift */; };
 		A07B63CF1A767C8100A37D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B63CE1A767C8100A37D56 /* AppDelegate.swift */; };
 		A07B63D61A767C8100A37D56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07B63D51A767C8100A37D56 /* Images.xcassets */; };
 		A07B63D91A767C8100A37D56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07B63D71A767C8100A37D56 /* LaunchScreen.xib */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A06AAE4E1A9DF99C001291F7 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = ../Restaurant.swift; sourceTree = "<group>"; };
+		A06AAE501A9E034D001291F7 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		A07B63C91A767C8100A37D56 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07B63CD1A767C8100A37D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A07B63CE1A767C8100A37D56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,8 +85,10 @@
 		A07B63CB1A767C8100A37D56 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				A06AAE4E1A9DF99C001291F7 /* Restaurant.swift */,
 				A0BD68BD1A88F34500CB0016 /* Main.storyboard */,
 				A0A5302C1A77D28A00B836AF /* CustomTableViewCell.swift */,
+				A06AAE501A9E034D001291F7 /* DetailTableViewCell.swift */,
 				A07B63CE1A767C8100A37D56 /* AppDelegate.swift */,
 				A0E5073C1A85A6A400EF0A83 /* DetailViewController.swift */,
 				A07B63EE1A767EC800A37D56 /* RestaurantTableViewController.swift */,
@@ -218,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06AAE511A9E034D001291F7 /* DetailTableViewCell.swift in Sources */,
+				A06AAE4F1A9DF99C001291F7 /* Restaurant.swift in Sources */,
 				A0A5302D1A77D28A00B836AF /* CustomTableViewCell.swift in Sources */,
 				A07B63EF1A767EC800A37D56 /* RestaurantTableViewController.swift in Sources */,
 				A07B63CF1A767C8100A37D56 /* AppDelegate.swift in Sources */,
