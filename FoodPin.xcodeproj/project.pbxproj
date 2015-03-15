@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A044E9BF1AB57DC60043F940 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A044E9BE1AB57DC60043F940 /* ShareViewController.swift */; };
 		A06AAE4F1A9DF99C001291F7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AAE4E1A9DF99C001291F7 /* Restaurant.swift */; };
 		A06AAE511A9E034D001291F7 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AAE501A9E034D001291F7 /* DetailTableViewCell.swift */; };
 		A07B63CF1A767C8100A37D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B63CE1A767C8100A37D56 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A044E9BE1AB57DC60043F940 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		A06AAE4E1A9DF99C001291F7 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = ../Restaurant.swift; sourceTree = "<group>"; };
 		A06AAE501A9E034D001291F7 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		A07B63C91A767C8100A37D56 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				A07B63D51A767C8100A37D56 /* Images.xcassets */,
 				A07B63D71A767C8100A37D56 /* LaunchScreen.xib */,
 				A0FB6F721AB568EE000BE5F8 /* ReviewViewController.swift */,
+				A044E9BE1AB57DC60043F940 /* ShareViewController.swift */,
 				A07B63CC1A767C8100A37D56 /* Supporting Files */,
 			);
 			path = FoodPin;
@@ -233,6 +236,7 @@
 				A0A5302D1A77D28A00B836AF /* CustomTableViewCell.swift in Sources */,
 				A07B63EF1A767EC800A37D56 /* RestaurantTableViewController.swift in Sources */,
 				A07B63CF1A767C8100A37D56 /* AppDelegate.swift in Sources */,
+				A044E9BF1AB57DC60043F940 /* ShareViewController.swift in Sources */,
 				A0E5073D1A85A6A400EF0A83 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
