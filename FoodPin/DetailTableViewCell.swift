@@ -11,6 +11,5 @@ import UIKit
 class DetailTableViewCell: UITableViewCell {
     @IBOutlet weak var filedLabel:UILabel!
     @IBOutlet weak var valueLabel:UILabel!
-    
-    
+
 }

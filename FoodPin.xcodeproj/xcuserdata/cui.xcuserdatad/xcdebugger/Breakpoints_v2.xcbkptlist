@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoodPin/RestaurantTableViewController.swift"
-            timestampString = "446903057.757202"
+            timestampString = "448028128.710789"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "256"
-            endingLineNumber = "256"
+            startingLineNumber = "236"
+            endingLineNumber = "236"
             landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -70,11 +70,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoodPin/RestaurantTableViewController.swift"
-            timestampString = "446902558.374087"
+            timestampString = "448028128.710789"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
