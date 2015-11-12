@@ -13,27 +13,25 @@ class ShareViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var blurEffect = UIBlurEffect(style: .Light)
-        var blurEffectView = UIVisualEffectView(effect: blurEffect)
+        let blurEffect = UIBlurEffect(style: .Light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         backgroundView.addSubview(blurEffectView)
-//        let scale = CGAffineTransformMakeScale(0.0, 0.0)
-//        let translation = CGAffineTransformMakeTranslation(0, 500)
         facebookButton.transform = CGAffineTransformMakeTranslation(0, 500)
         messageButton.transform = CGAffineTransformMakeTranslation(0, 500)
         twitterButton.transform = CGAffineTransformMakeTranslation(0, -500)
         emailButton.transform = CGAffineTransformMakeTranslation(0, -500)
-//        dialogView.transform = CGAffineTransformConcat(scale, translation)
     }
     
     override func viewDidAppear(animated: Bool) {
-        UIView.animateWithDuration(1, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: nil, animations: { () -> Void in
-//            let scale = CGAffineTransformMakeScale(1, 1)
+        UIView.animateWithDuration(1.5, delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: .TransitionFlipFromTop, animations: { () -> Void in
+            
             self.facebookButton.transform = CGAffineTransformMakeTranslation(0, 0)
             self.emailButton.transform = CGAffineTransformMakeTranslation(0, 0)
-        }, completion: nil)
+            }, completion: nil)
         
-        UIView.animateWithDuration(0.7, delay: 0.2, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: nil, animations: { () -> Void in
+        
+        UIView.animateWithDuration(1.5, delay: 0.1, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.5, options: .OverrideInheritedCurve, animations: { () -> Void in
             self.messageButton.transform = CGAffineTransformMakeTranslation(0, 0)
             self.twitterButton.transform = CGAffineTransformMakeTranslation(0, 0)
         }, completion: nil)

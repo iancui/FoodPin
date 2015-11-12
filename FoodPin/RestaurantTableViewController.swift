@@ -10,29 +10,6 @@ import UIKit
 
 class RestaurantTableViewController: UITableViewController {
 
-//    
-//    var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl", "Petite Oyster", "ForKee Restaurant", "Po's Atelier", "Bourke Street Bakery", "Haigh's Chocolate", "PalominoEspresso", "Upstate", "Traif", "Graham Avenue Meats", "Waffle & Wolf", "Five Leaves", "CafeLore", "Confessional", "Barrafina", "Donostia", "Royal Oak", "Thai Cafe"]
-//    
-//    var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Sydney", "Sydney", "Sydney",
-//        "New York", "New York", "New York", "New York", "New York", "New York", "New York", "London", "London",
-//        "London", "London"]
-//    
-//    var restaurantTypes = ["Coffee & Tea Shop",
-//            "Cafe", "Tea House", "Austrian / Causual Drink",
-//            "French", "Bakery", "Bakery", "Chocolate", "Cafe",
-//            "American / Seafood", "American", "American",
-//            "Breakfast & Brunch", "Coffee & Tea", "Coffee & Tea", "Latin American", "Spanish", "Spanish",
-//            "Spanish", "British", "Thai"]
-//    
-//    var restaurantImages = ["cafedeadend.jpg", "homei.jpg", "teakha.jpg", "cafeloisl.jpg",
-//    "petiteoyster.jpg", "forkeerestaurant.jpg", "posatelier.jpg", "bourkestreetbakery.jpg",
-//    "haighschocolate.jpg", "palominoespresso.jpg", "upstate.jpg", "traif.jpg",
-//    "grahamavenuemeats.jpg", "wafflewolf.jpg", "fiveleaves.jpg", "cafelore.jpg",
-//    "confessional.jpg", "barrafina.jpg", "donostia.jpg", "royaloak.jpg", "thaicafe.jpg"]
-//    
-//    var restaurantIsVisited = [Bool](count: 21, repeatedValue: false)
-    
-    
     var restaurants:[Restaurant] = [
         Restaurant(name: "Cafe Deadend", type: "Coffee & Tea Shop", location: "G/F, 72 Po Hing Fong, Sheung Wan, Hong Kong", image: "cafedeadend.jpg", isVisited: true),
         Restaurant(name: "Homei", type: "Cafe", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", image: "homei.jpg", isVisited: false),
@@ -58,22 +35,7 @@ class RestaurantTableViewController: UITableViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-//        UINavigationBar.appearance().barTintColor = UIColor(red: 231.0/255.0, green: 95.0/255.0, blue: 53.0/255.0, alpha: 0.3)
-//        if let barFont = UIFont (name: "AvenirNextCondensed-DemiBold",
-//            size: 22.0) {
-//            UINavigationBar.appearance().titleTextAttributes =
-//            [NSForegroundColorAttributeName:UIColor.whiteColor(),
-//            NSFontAttributeName:barFont]
-//        }
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
-    
-        
+ 
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,40 +58,14 @@ class RestaurantTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as CustomTableViewCell
+        let cellIdentifier = "Cell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CustomTableViewCell
 
         let restaurant = restaurants[indexPath.row]
         cell.nameLabel.text = restaurant.name
         cell.backgroundImageView.image = UIImage(named: restaurant.image)
         cell.locationLabel.text = restaurant.location
         cell.typeLabel.text = restaurant.type
-        if restaurant.isVisited {
-            cell.accessoryType = .Checkmark
-        }else{
-            cell.accessoryType = .None
-        }
-////        cell.frame.height = self.view.frame.height / 2
-//        cell.nameLabel.text = restaurantNames[indexPath.row]
-////        cell.nameLabel.textColor = UIColor.whiteColor()
-//        cell.backgroundImageView.image = UIImage(named: restaurantImages[indexPath.row])
-////    cell.backgroundView?.addSubview(UIImageView(image: UIImage(named: "test"))
-////        cell.backgroundImageView.layer.cornerRadius = cell.backgroundImageView.frame.width/2
-////        cell.backgroundImageView.clipsToBounds = true
-////        cell.backgroundView.
-//        
-//        
-//        cell.locationLabel.text = restaurantLocations[indexPath.row]
-////        cell.locationLabel.textColor = UIColor.whiteColor()
-//        
-//        cell.typeLabel.text = restaurantTypes[indexPath.row]
-////        cell.accessoryType = restaurantIsVisited[indexPath.row]
-////        cell.typeLabel.textColor = UIColor.whiteColor()
-//        if restaurantIsVisited[indexPath.row] {
-//            cell.accessoryType = .Checkmark
-//        } else {
-//            cell.accessoryType = .None
-//        }
 
         return cell
     }
@@ -140,47 +76,6 @@ class RestaurantTableViewController: UITableViewController {
         self.navigationController?.hidesBarsOnSwipe = true
     }
 
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        // 创建一个可操作的菜单
-//        let optionMenu = UIAlertController(title: nil, message: "你想干啥？", preferredStyle: UIAlertControllerStyle.ActionSheet)
-//        // 往菜单添加action
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
-//        optionMenu.addAction(cancelAction)
-//        // 
-//    let callActionHandler = {
-//            (action:UIAlertAction!) -> Void in
-//                    let alertMessage = UIAlertController(title: "Service Unavailable", message: "对不起，电话打不通。请稍后再试。", preferredStyle: .Alert)
-//                    alertMessage.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-//                    self.presentViewController(alertMessage, animated: true, completion: nil)
-//    }
-//    
-//    let CallAction = UIAlertAction(title: "Call " + "123-000-\(indexPath.row)", style: .Default,handler:callActionHandler)
-//    optionMenu.addAction(CallAction)
-//    
-//    let isVisitedAction = UIAlertAction(title: "I've been here", style: .Default, handler: { (action: UIAlertAction!) -> Void in
-//        let cell = tableView.cellForRowAtIndexPath(indexPath)
-//        cell?.accessoryType = .Checkmark
-//        self.restaurantIsVisited[indexPath.row] = true
-//        
-//    })
-//    
-//    optionMenu.addAction(isVisitedAction)
-//    
-//
-//            ,{ (UIAlertAction!) -> Void in
-//        let alertMessage = UIAlertController(title: "Service Unavailable", message: "对不起，电话打不通。请稍后再试。", preferredStyle: .Alert)
-//        alertMessage.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-//        self.presentViewController(alertMessage, animated: true, completion: nil)
-//            })
-    
-    
-//        // 显示菜单
-//        self.presentViewController(optionMenu, animated: true, completion: nil)
-    
-//        tableView.deselectRowAtIndexPath(indexPath: indexPath, animated: false)
-    
-    
-//    }
     
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -196,13 +91,16 @@ class RestaurantTableViewController: UITableViewController {
 //        }
     }
     
-    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [AnyObject]? {
-        var shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.Normal, title: "Share",handler:{ (action : UITableViewRowAction!, indexPath : NSIndexPath!) -> Void in
-            let shareMenu = UIAlertController(title: nil, message: "Share using", preferredStyle: UIAlertControllerStyle.ActionSheet)
+    override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+
+        
+        let shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.Normal, title: "分享",handler:{ (action : UITableViewRowAction!, indexPath : NSIndexPath!) -> Void in
+  
+            let shareMenu = UIAlertController(title: nil, message: "分享", preferredStyle: UIAlertControllerStyle.ActionSheet)
             let twitterAction = UIAlertAction(title: "Twitter", style: UIAlertActionStyle.Default, handler: nil)
             let facebookAction = UIAlertAction(title: "Facebook", style: .Default, handler: nil)
             let emailAction = UIAlertAction(title: "Email", style: .Default, handler: nil)
-            let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
+            let cancelAction = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
             shareMenu.addAction(twitterAction)
             shareMenu.addAction(facebookAction)
             shareMenu.addAction(emailAction)
@@ -210,36 +108,33 @@ class RestaurantTableViewController: UITableViewController {
             self.presentViewController(shareMenu, animated: true, completion: nil)
             
         })
-        var deleteAction = UITableViewRowAction(style: .Default, title: "Delete" ,handler :{ (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
-            // Delete the row from the data source
-//            self.restaurantNames.removeAtIndex(indexPath.row)
-//            self.restaurantLocations.removeAtIndex(indexPath.row)
-//            self.restaurantTypes.removeAtIndex(indexPath.row)
-//            self.restaurantIsVisited.removeAtIndex(indexPath.row)
-//            self.restaurantImages.removeAtIndex(indexPath.row)
+        let deleteAction = UITableViewRowAction(style: .Destructive, title: "删除" ,handler :{ (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
             self.restaurants.removeAtIndex(indexPath.row)
             //            self.tableView.reloadData()
             self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         })
-        shareAction.backgroundColor = UIColor(red: 255.0/255.0, green: 166.0/255.0, blue:
-            51.0/255.0, alpha: 1.0)
-        deleteAction.backgroundColor = UIColor(red: 51.0/255.0, green: 51.0/255.0, blue:
-            51.0/255.0, alpha: 1.0)
+//        shareAction.backgroundColor = UIColor(red: 255.0/255.0, green: 166.0/255.0, blue:
+//            51.0/255.0, alpha: 1.0)
+//        deleteAction.backgroundColor = UIColor(red: 51.0/255.0, green: 51.0/255.0, blue:
+//            51.0/255.0, alpha: 1.0)
         
         return [deleteAction,shareAction]
-        
+
     }
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showRestaurantDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let destinationController = segue.destinationViewController as DetailViewController
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let destinationController = segue.destinationViewController as! DetailViewController
                 destinationController.restaurant = restaurants[indexPath.row]
             }
         }
     }
     
+    @IBAction func unwindToHomeScreen(segue:UIStoryboardSegue){
+        
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

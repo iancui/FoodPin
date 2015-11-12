@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoodPin/RestaurantTableViewController.swift"
-            timestampString = "448028128.710789"
+            timestampString = "469027851.40948"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -38,6 +38,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "FoodPin.DetailViewController.__deallocating_deinit"
                   moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cui/Desktop/ios/FoodPin/FoodPin/DetailViewController.swift"
                   timestampString = "445187420.12015"
                   startingColumnNumber = "9223372036854775807"
@@ -52,6 +53,7 @@
                   continueAfterRunningActions = "No"
                   symbolName = "@objc FoodPin.DetailViewController.__ivar_destroyer"
                   moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/cui/Desktop/ios/FoodPin/FoodPin/DetailViewController.swift"
                   timestampString = "445187420.120333"
                   startingColumnNumber = "9223372036854775807"
@@ -70,12 +72,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoodPin/RestaurantTableViewController.swift"
-            timestampString = "448028128.710789"
+            timestampString = "469018914.16564"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodPin/ReviewViewController.swift"
+            timestampString = "469027727.685848"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodPin/MapViewController.swift"
+            timestampString = "469028301.130177"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "mapView(_:viewForAnnotation:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

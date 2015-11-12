@@ -48,23 +48,30 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("detailCell", forIndexPath: indexPath) as DetailTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("detailCell", forIndexPath: indexPath) as UITableViewCell
+        // 隐藏按钮
         switch indexPath.row {
         case 0:
-            cell.filedLabel.text = "Name"
-            cell.valueLabel.text = restaurant.name
+            cell.textLabel!.text = "店名"
+            cell.detailTextLabel!.text = restaurant.name
         case 1:
-            cell.filedLabel.text = "Type"
-            cell.valueLabel.text = restaurant.type
+            cell.textLabel!.text = "类型"
+            cell.detailTextLabel!.text = restaurant.type
         case 2:
-            cell.filedLabel.text = "Location"
-            cell.valueLabel.text = restaurant.location
+            cell.textLabel!.text = "地点"
+            cell.detailTextLabel!.text = restaurant.location
         case 3:
-            cell.filedLabel.text = "Been here"
-            cell.valueLabel.text = (restaurant.isVisited) ? "Yes, I've been here before" : "No"
+            cell.textLabel!.text = "是否到过这里"
+            if restaurant.isVisited {
+            cell.detailTextLabel!.text = "是"
+                cell.detailTextLabel?.textColor = UIColor.redColor()
+            }else {
+                
+                cell.detailTextLabel!.text = "否"
+            }
         default:
-            cell.filedLabel.text = ""
-            cell.valueLabel.text = ""
+            cell.textLabel!.text = ""
+            cell.detailTextLabel!.text = ""
         }
         cell.backgroundColor = UIColor.clearColor()
         return cell
@@ -77,5 +84,12 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showMap" {
+            let destinationController = segue.destinationViewController as! MapViewController
+            destinationController.restaurant = restaurant
+        }
+    }
 
+    
 }

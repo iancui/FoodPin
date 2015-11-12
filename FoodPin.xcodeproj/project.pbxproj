@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A003765E1AEFD18B0068285D /* AddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A003765D1AEFD18B0068285D /* AddTableViewController.swift */; };
+		A0134CF01AB587E1008B64C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0134CEF1AB587E1008B64C7 /* MapKit.framework */; };
 		A044E9BF1AB57DC60043F940 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A044E9BE1AB57DC60043F940 /* ShareViewController.swift */; };
 		A06AAE4F1A9DF99C001291F7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AAE4E1A9DF99C001291F7 /* Restaurant.swift */; };
-		A06AAE511A9E034D001291F7 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AAE501A9E034D001291F7 /* DetailTableViewCell.swift */; };
+		A077A9AE1BF4D27D00A74F5D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A077A9AD1BF4D27D00A74F5D /* Podfile */; };
+		A077A9D21BF4DCE600A74F5D /* FoodPin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A077A9D01BF4DCE500A74F5D /* FoodPin.xcdatamodeld */; };
 		A07B63CF1A767C8100A37D56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B63CE1A767C8100A37D56 /* AppDelegate.swift */; };
 		A07B63D61A767C8100A37D56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07B63D51A767C8100A37D56 /* Images.xcassets */; };
 		A07B63D91A767C8100A37D56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A07B63D71A767C8100A37D56 /* LaunchScreen.xib */; };
@@ -17,6 +20,7 @@
 		A07B63EF1A767EC800A37D56 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B63EE1A767EC800A37D56 /* RestaurantTableViewController.swift */; };
 		A0A5302D1A77D28A00B836AF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5302C1A77D28A00B836AF /* CustomTableViewCell.swift */; };
 		A0BD68BF1A88F34500CB0016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0BD68BD1A88F34500CB0016 /* Main.storyboard */; };
+		A0DA56AD1AB5B17B000CD6E4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA56AC1AB5B17B000CD6E4 /* MapViewController.swift */; };
 		A0E5073D1A85A6A400EF0A83 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E5073C1A85A6A400EF0A83 /* DetailViewController.swift */; };
 		A0FB6F731AB568EE000BE5F8 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FB6F721AB568EE000BE5F8 /* ReviewViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,9 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A003765D1AEFD18B0068285D /* AddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTableViewController.swift; sourceTree = "<group>"; };
+		A0134CEF1AB587E1008B64C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A044E9BE1AB57DC60043F940 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		A06AAE4E1A9DF99C001291F7 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurant.swift; path = ../Restaurant.swift; sourceTree = "<group>"; };
-		A06AAE501A9E034D001291F7 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		A077A9AD1BF4D27D00A74F5D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		A077A9D11BF4DCE600A74F5D /* FoodPin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodPin.xcdatamodel; sourceTree = "<group>"; };
 		A07B63C91A767C8100A37D56 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07B63CD1A767C8100A37D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A07B63CE1A767C8100A37D56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +53,7 @@
 		A07B63EE1A767EC800A37D56 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		A0A5302C1A77D28A00B836AF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTableViewCell.swift; path = ../CustomTableViewCell.swift; sourceTree = "<group>"; };
 		A0BD68BE1A88F34500CB0016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0DA56AC1AB5B17B000CD6E4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A0E5073C1A85A6A400EF0A83 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A0FB6F721AB568EE000BE5F8 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0134CF01AB587E1008B64C7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +80,8 @@
 		A07B63C01A767C8100A37D56 = {
 			isa = PBXGroup;
 			children = (
+				A077A9AD1BF4D27D00A74F5D /* Podfile */,
+				A0134CEF1AB587E1008B64C7 /* MapKit.framework */,
 				A07B63CB1A767C8100A37D56 /* FoodPin */,
 				A07B63E11A767C8100A37D56 /* FoodPinTests */,
 				A07B63CA1A767C8100A37D56 /* Products */,
@@ -89,11 +100,13 @@
 		A07B63CB1A767C8100A37D56 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
-				A06AAE4E1A9DF99C001291F7 /* Restaurant.swift */,
-				A0BD68BD1A88F34500CB0016 /* Main.storyboard */,
-				A0A5302C1A77D28A00B836AF /* CustomTableViewCell.swift */,
-				A06AAE501A9E034D001291F7 /* DetailTableViewCell.swift */,
 				A07B63CE1A767C8100A37D56 /* AppDelegate.swift */,
+				A06AAE4E1A9DF99C001291F7 /* Restaurant.swift */,
+				A077A9D01BF4DCE500A74F5D /* FoodPin.xcdatamodeld */,
+				A0BD68BD1A88F34500CB0016 /* Main.storyboard */,
+				A003765D1AEFD18B0068285D /* AddTableViewController.swift */,
+				A0DA56AC1AB5B17B000CD6E4 /* MapViewController.swift */,
+				A0A5302C1A77D28A00B836AF /* CustomTableViewCell.swift */,
 				A0E5073C1A85A6A400EF0A83 /* DetailViewController.swift */,
 				A07B63EE1A767EC800A37D56 /* RestaurantTableViewController.swift */,
 				A07B63D51A767C8100A37D56 /* Images.xcassets */,
@@ -174,11 +187,18 @@
 		A07B63C11A767C8100A37D56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = AppCoda;
 				TargetAttributes = {
 					A07B63C81A767C8100A37D56 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 8ZGEZ5X9CC;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A07B63DD1A767C8100A37D56 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -212,6 +232,7 @@
 			files = (
 				A0BD68BF1A88F34500CB0016 /* Main.storyboard in Resources */,
 				A07B63D91A767C8100A37D56 /* LaunchScreen.xib in Resources */,
+				A077A9AE1BF4D27D00A74F5D /* Podfile in Resources */,
 				A07B63D61A767C8100A37D56 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,14 +251,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A06AAE511A9E034D001291F7 /* DetailTableViewCell.swift in Sources */,
 				A06AAE4F1A9DF99C001291F7 /* Restaurant.swift in Sources */,
 				A0FB6F731AB568EE000BE5F8 /* ReviewViewController.swift in Sources */,
+				A077A9D21BF4DCE600A74F5D /* FoodPin.xcdatamodeld in Sources */,
 				A0A5302D1A77D28A00B836AF /* CustomTableViewCell.swift in Sources */,
+				A0DA56AD1AB5B17B000CD6E4 /* MapViewController.swift in Sources */,
 				A07B63EF1A767EC800A37D56 /* RestaurantTableViewController.swift in Sources */,
 				A07B63CF1A767C8100A37D56 /* AppDelegate.swift in Sources */,
 				A044E9BF1AB57DC60043F940 /* ShareViewController.swift in Sources */,
 				A0E5073D1A85A6A400EF0A83 /* DetailViewController.swift in Sources */,
+				A003765E1AEFD18B0068285D /* AddTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +383,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FoodPin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.FoodPinTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -370,8 +396,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FoodPin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.FoodPinTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -441,6 +470,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A077A9D01BF4DCE500A74F5D /* FoodPin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A077A9D11BF4DCE600A74F5D /* FoodPin.xcdatamodel */,
+			);
+			currentVersion = A077A9D11BF4DCE600A74F5D /* FoodPin.xcdatamodel */;
+			path = FoodPin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A07B63C11A767C8100A37D56 /* Project object */;
 }
