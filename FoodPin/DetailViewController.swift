@@ -26,7 +26,7 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        self.restaurantImageView.image = UIImage(named: restaurant.image)
+        self.restaurantImageView.image = UIImage(data: restaurant.image)
         self.tableView.backgroundColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.2)
         self.tableView.tableFooterView = UIView(frame: CGRectZero)
         self.tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.8)
@@ -62,7 +62,7 @@ class DetailViewController: UIViewController,UITableViewDelegate,UITableViewData
             cell.detailTextLabel!.text = restaurant.location
         case 3:
             cell.textLabel!.text = "是否到过这里"
-            if restaurant.isVisited {
+            if restaurant.isVisited.boolValue {
             cell.detailTextLabel!.text = "是"
                 cell.detailTextLabel?.textColor = UIColor.redColor()
             }else {

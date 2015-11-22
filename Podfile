@@ -4,7 +4,8 @@
 # use_frameworks!
 
 target 'FoodPin' do
-    pod 'UITextBox'
+    use_frameworks!
+    pod 'Alamofire'
 end
 
 target 'FoodPinTests' do
